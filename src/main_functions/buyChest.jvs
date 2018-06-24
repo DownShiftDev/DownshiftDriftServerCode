@@ -1,6 +1,6 @@
 handlers.buyChest = function(args, context)
 {
-  var mC = CheckMaintenanceAndVersion(args);
+  // var mC = CheckMaintenanceAndVersion(args);
   if(mC != "OK") return generateMaintenanceOrUpdateObj(mC);
 
   var userInventoryObject=server.GetUserInventory(
